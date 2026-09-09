@@ -1,4 +1,6 @@
 .direnv
 .envrc
 
-main.i
+*.i
+*.o
+*.s
