@@ -22,5 +22,8 @@ all: firmware.elf
 firmware.elf: $(OBJS)
 	$(LD) -o $@ $^
 
+hello.txt:
+    echo "hello world!" > hello.txt
+
 clean:
 	rm -f *.i *.o *.s *.elf
