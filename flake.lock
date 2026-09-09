@@ -1,0 +1,84 @@
+{
+  "nodes": {
+    "freertos": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1723126959,
+        "narHash": "sha256-sWO+gtPfiEHFitXYxYDYzFeZyXH3k+4gupYznVJJGPg=",
+        "ref": "refs/heads/main",
+        "rev": "4f7299d6ea746b27a9dd19e87af568e34bd65b15",
+        "revCount": 3483,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/raspberrypi/FreeRTOS-Kernel.git"
+      },
+      "original": {
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/raspberrypi/FreeRTOS-Kernel.git"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1788922888,
+        "narHash": "sha256-QMX3uerxnW2R5dHcWpIQILHDltOZnon3x3Spq7EzBFI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a391f95d4557d685fd8e5dc0d4b1f9271aa2f342",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "rtos-nix": "rtos-nix"
+      }
+    },
+    "rtos-nix": {
+      "inputs": {
+        "freertos": "freertos",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "unity": "unity"
+      },
+      "locked": {
+        "lastModified": 1788203573,
+        "narHash": "sha256-cqpzufwf5COzHzeGeqzlq1Rhm9N1hvSI2KNX2Xx+m7U=",
+        "owner": "ZainKergayeProjects",
+        "repo": "rtos.nix",
+        "rev": "7dc9ff7d6cf2233b1cb8e09388f95074a49f696e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ZainKergayeProjects",
+        "repo": "rtos.nix",
+        "type": "github"
+      }
+    },
+    "unity": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1787666923,
+        "narHash": "sha256-8BqlnYKO9tnVT6rAH8iiyVax9BYfhL61w+cLhvuajgI=",
+        "ref": "refs/heads/master",
+        "rev": "2b67b99a4a87db87ff8c28a3b7e405c3e56d65f0",
+        "revCount": 1468,
+        "type": "git",
+        "url": "https://github.com/ThrowTheSwitch/Unity.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://github.com/ThrowTheSwitch/Unity.git"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
